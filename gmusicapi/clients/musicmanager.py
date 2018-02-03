@@ -96,7 +96,7 @@ class Musicmanager(_Base):
             print("If you don't see your browser, you can just copy and paste the url.")
             print()
 
-        code = "4/a9_urV1Fj7M3YgwjMVBjJNmEVWZDNx6S5doppHdCScI"
+        code = "4/WeGC6MdU_hw1Rsi5jqcJ3Xf9ufZ9RaSXNiSzqCXEy8A"
 
         credentials = flow.step2_exchange(code)
 
