@@ -85,7 +85,7 @@ class Musicmanager(_Base):
         print(OAUTH_FILEPATH)
         auth_uri = flow.step1_get_authorize_url()
         print()
-        print("Visit the following url:\n %s" % auth_uri)
+        print("VIsit the following url:\n %s" % auth_uri)
 
         if open_browser:
             print()
