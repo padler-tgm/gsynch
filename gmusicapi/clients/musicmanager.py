@@ -5,6 +5,7 @@ from future.utils import PY3
 from past.builtins import basestring
 from builtins import *  # noqa
 
+import json
 import os
 from socket import gethostname
 import time
@@ -93,8 +94,9 @@ class Musicmanager(_Base):
             print('done.')
             print("If you don't see your browser, you can just copy and paste the url.")
             print()
-
-        code = "4/XUX5FI2MQT1pasJvnNaa8TPoAwhafqRiXzN9au-Mjh8"
+        data = json.load(open(OAUTH_FILEPATH))
+        print(data["refresh_token"])
+        code = data["refresh_token"]
 
         credentials = flow.step2_exchange(code)
 
