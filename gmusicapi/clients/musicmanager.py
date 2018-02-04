@@ -82,7 +82,6 @@ class Musicmanager(_Base):
         """
 
         flow = OAuth2WebServerFlow(*musicmanager.oauth)
-        print(OAUTH_FILEPATH)
         auth_uri = flow.step1_get_authorize_url()
         print()
         print("VIsit the following url:\n %s" % auth_uri)
