@@ -29,7 +29,6 @@ from gmusicapi.utils import utils
 from gmusicapi import session
 
 OAUTH_FILEPATH = os.path.join(my_appdirs.user_data_dir, 'oauth.cred')
-print(OAUTH_FILEPATH)
 
 class Musicmanager(_Base):
     """Allows uploading by posing as Google's Music Manager.
@@ -83,7 +82,7 @@ class Musicmanager(_Base):
         """
 
         flow = OAuth2WebServerFlow(*musicmanager.oauth)
-
+        print(OAUTH_FILEPATH)
         auth_uri = flow.step1_get_authorize_url()
         print()
         print("Visit the following url:\n %s" % auth_uri)
