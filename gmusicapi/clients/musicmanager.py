@@ -29,7 +29,7 @@ from gmusicapi.utils import utils
 from gmusicapi import session
 
 OAUTH_FILEPATH = os.path.join(my_appdirs.user_data_dir, 'oauth.cred')
-
+print(OAUTH_FILEPATH)
 
 class Musicmanager(_Base):
     """Allows uploading by posing as Google's Music Manager.
